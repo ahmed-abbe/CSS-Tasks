@@ -1,0 +1,6 @@
+* {
+    margin: 0;
+}
+div > :not(div:last-of-type, div:first-of-type, h3){
+    color: red;
+}

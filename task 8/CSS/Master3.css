@@ -1,0 +1,23 @@
+.parent { 
+    width: 400px;
+    margin: 0 auto
+}
+.parent-1,
+.parent-2,
+.parent-3 {
+    padding: 10px;
+    background-color: #DDD;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.parent-1 li,
+.parent-2 li,
+.parent-3 li{
+    background-color: white;
+    padding: 5px;
+    margin: 5px 0;
+}
+.parent-3 ul{
+    list-style-position: inside;
+    padding: 0
+}

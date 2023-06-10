@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.parent div {
+    background-color: #EEE;
+    padding: 20px 20px 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: bold;
+}
+div::before {
+    content: attr(data);
+    position: absolute;
+    bottom: 0px;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: normal;
+    color: black;
+}
+@media (min-width: 700px) {
+    .parent div {
+        width: calc(50% - 20px);
+        color: orangered;
+    }
+}
+@media (min-width: 1100px) {
+    .parent div {
+        width: calc(25% - 20px);
+        color: cadetblue;
+    }
+}

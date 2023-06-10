@@ -1,0 +1,36 @@
+:root {
+    --maincolor: orangered;
+}
+* {
+    box-sizing: border-box;
+}
+h1{
+    position: relative;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+}
+h1::before {
+    content: '';
+    position: absolute;
+    background-color: var(--maincolor, black);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: skewX(-5deg) skewY(-5deg);
+}
+h1::after {
+    content: '';
+    position: absolute;
+    background-color: var(--maincolor, black);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: skewX(5deg) skewY(5deg);
+}

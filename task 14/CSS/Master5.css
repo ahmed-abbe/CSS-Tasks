@@ -1,0 +1,19 @@
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-between;
+    column-gap: 20px;
+}
+.grid div {
+    background-color: rgb(238 0 93);    
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial", "Helvetica", "Sans-serif";
+    text-align: center;
+}

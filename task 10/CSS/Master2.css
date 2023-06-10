@@ -1,0 +1,15 @@
+div {
+    height: 100px;
+    width: 100px;
+    margin: 5px auto;
+    background-color: #EEE;
+    border-top-left-radius: 10px 20px;
+    border-top-right-radius: 50px 40px;
+    border-bottom-left-radius: 50px 40px;
+    border-bottom-right-radius: 10px 20px;
+    -webkit-box-shadow: 0 0 10px 0 rgb(0 0 0 / .5) inset, -1px -1px 10px 0 rgb(0 0 0 / 50%) inset;
+    -moz-box-shadow: 0 0 10px 0 rgb(0 0 0 / .5) inset, -1px -1px 10px 0 rgb(0 0 0 / 50%) inset;
+    -ms-box-shadow: 0 0 10px 0 rgb(0 0 0 / .5) inset, -1px -1px 10px 0 rgb(0 0 0 / 50%) inset;
+    -o-box-shadow: 0 0 10px 0 rgb(0 0 0 / .5) inset, -1px -1px 10px 0 rgb(0 0 0 / 50%) inset;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / .5) inset, -1px -1px 10px 0 rgb(0 0 0 / 50%) inset;
+}

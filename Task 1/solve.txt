@@ -1,0 +1,85 @@
+/* Any Element With Class Title */
+.title {
+}
+
+/* Any Element with Id nav */
+#nav {
+}
+
+/* Any div */
+div {
+}
+
+/* Any h2 */
+h2 {
+}
+-------------------------------++++++++++++++++++++++++++++++++++++++++++-------------------------------
+<!-- external style -->
+<link rel="stylesheet" href="css/file.css" />
+
+<!-- internal style -->
+<style>
+p {
+  color: red;
+}
+</style>
+
+<!-- inline style -->
+<p style="color: blue;">This Is Our Paragraph</p>
+-------------------------------++++++++++++++++++++++++++++++++++++++++++-------------------------------
+<link rel="stylesheet" href="assets/Css/Master.css" />
+-------------------------------++++++++++++++++++++++++++++++++++++++++++-------------------------------
+<link rel="stylesheet" href="../source/css/main.css" />
+-------------------------------++++++++++++++++++++++++++++++++++++++++++-------------------------------
+/* vaild */
+._user-name {
+}
+
+/* vaild */
+.-user-name {
+}
+
+/* vaild */
+.-user-name {
+}
+
+/* not vaild */
+.1user-name {
+}
+
+/* not vaild */
+.@user-name {
+}
+
+/* not vaild */
+.user@name {
+}
+
+/* vaild */
+._user10name {
+}
+
+/* vaild */
+.u {
+}
+-------------------------------++++++++++++++++++++++++++++++++++++++++++-------------------------------
+/* bad */
+.USERNAME {
+}
+
+/* bad */
+.UserName {
+}
+
+/* good */
+.user-name {
+}
+
+/* bad */
+.userName {
+}
+
+/* bad */
+.usernameprofile {
+}
+-------------------------------++++++++++++++++++++++++++++++++++++++++++-------------------------------

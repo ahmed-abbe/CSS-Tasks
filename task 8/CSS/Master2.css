@@ -1,0 +1,37 @@
+div {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #DDD;
+    border: 2px solid;
+    border-color: red rgb(0, 132, 255);
+    position: relative;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span {
+    padding: 0 15px;
+    position: absolute;
+    background-color: rgb(0 132 255);
+}
+.top-left {
+    top: -15px;
+    left: -20px;
+    border-right: 2px solid red;
+}
+.bottom-left {
+    bottom: -15px;
+    left: -20px;
+    border-right: 2px solid red;
+}
+.top-right {
+    top: -15px;
+    right: -20px;
+    border-left: 2px solid red;
+}
+.bottom-right {
+    bottom: -15px;
+    right: -20px;
+    border-left: 2px solid red;
+}

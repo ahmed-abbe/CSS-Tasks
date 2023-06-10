@@ -1,0 +1,18 @@
+p.one {
+    /* make the all letters capital */
+    text-transform: uppercase;
+}
+p.two {
+    /* make the first letter captial in every word */
+    text-transform: capitalize;
+}
+p.three {
+    /* make all leeters snall */
+    text-transform: lowercase;
+}
+.one,
+.two,
+.three {
+    background-color: #EEE;
+    text-align: center;
+}

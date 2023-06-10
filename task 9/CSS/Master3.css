@@ -1,0 +1,30 @@
+p {
+    position: relative;
+    width: 350px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #EEE;
+    border-left: 3px solid red;
+}
+p::before {
+    content: attr(data-person);
+    position: absolute;
+    background-color: #DDD;
+    padding: 5px;
+    height: 20px;
+    width: 50px;
+    top: 50%;
+    left: -80px;
+    margin-top: -15px;
+    text-align: center;
+}
+p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -19px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent red transparent transparent;
+    margin-top: -8px;
+}

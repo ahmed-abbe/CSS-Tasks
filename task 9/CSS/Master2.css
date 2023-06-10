@@ -1,0 +1,14 @@
+div {
+    background-color: #DDD;
+    padding: 15px;
+    width: fit-content;
+    margin: 5px auto;
+    font-family: Arial, Helvetica, sans-serif
+}
+div:first-letter {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 10px 8px;
+    margin-left: -30px;
+}

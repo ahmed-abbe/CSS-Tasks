@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+div:hover {
+    transform: rotateY(-180deg) translate(50%, -50%);
+}
+div::before,
+div::after {
+    content: "Front";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    backface-visibility: hidden;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div::after {
+    content: "Back";
+    background-color: skyblue;
+    transform: rotateY(180deg);
+}

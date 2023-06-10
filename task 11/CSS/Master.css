@@ -1,0 +1,27 @@
+.parent {
+    margin: 20px auto;
+    padding: 10px;
+    width: 500px;
+    height: 250px;
+    background-color: #EEE;
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+    transition-duration: .5s;
+    transition-property: margin;
+    transition-delay: 0;
+    transition-timing-function: ease
+}
+.child {
+    padding: 20px 10px;
+    background-color: #CCC;
+    margin: 10px auto;
+    width: 90%;
+    transition: margin .5s ease .5s
+}
+.parent:hover {
+    margin-top: 10px;
+}
+.parent:hover .child {
+    margin-top: 40px;
+}

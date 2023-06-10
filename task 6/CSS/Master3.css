@@ -1,0 +1,31 @@
+html {
+    font-size: 20px;
+}
+div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif 
+}
+.shape-1 {
+    font-size: 2.5rem
+}
+.shape-2 {
+    font-size: 2rem
+}
+.shape-3 {
+    font-size: 1.5rem;
+}
+/* 
+    em => when we use it the font-size will be as te parent so if the parent elemnt's font-size is 20px then when we use 2em 
+    on the child elment it gonna be 40px.
+    ========================================================================================================================
+    vw => when we use that one it will make the font size realted to the page width so if the page width is 900px and we make
+    the font-size = 5vw then the font-size = 45px (5 x (900 / 100))
+    ========================================================================================================================
+    cursor: ; => we use it when we want to change how cusrsor look like for example cursor: pointer; will make the cursor 
+    change to the hand (same as the cusror when we hover on a link)
+    ========================================================================================================================
+    direction: ; => we use it we want to change te page direction depndens on the language for example in arabic langaguage we
+    should make the direction: rtl; .
+    ========================================================================================================================
+    vertical-align: ; where the word will be comparing to the picture for example vertical-align: middle; (the word will be in the middle)
+*/

@@ -1,0 +1,42 @@
+div {
+    background-color: #EEE;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: left;
+    width: 550px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+.arrow::before {
+    content: '';
+    border: 20px solid;
+    position: absolute;
+}
+.top.arrow::before {
+    border-color: transparent transparent #EEE transparent;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.right.arrow::before {
+    border-color: transparent transparent transparent #EEE;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+.bottom.arrow::before {
+    border-color: #EEE transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.left.arrow::before {
+    border-color:  transparent #EEE transparent transparent;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+}

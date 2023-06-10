@@ -1,0 +1,12 @@
+a {
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    background-color: lightseagreen;
+    border-bottom: 5px solid seagreen;
+    padding: 5px 10px;
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+    text-transform: capitalize;
+}

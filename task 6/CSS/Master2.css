@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "opensans";
+    src: url("fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+div {
+    text-align: center;
+}
+.shape-1 {
+    font-family: "opensans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    /* 
+    we usw font-variant when we want to make all the letters capital and small at same time.
+    font-variant: small-caps; 
+    */
+}
+.shape-2 {
+    font-family: "cairo", sans-serif;
+}
+.shape-3 {
+    font-family: 'Jomhuria', cursive;
+}

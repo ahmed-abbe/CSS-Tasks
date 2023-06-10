@@ -1,0 +1,29 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(96, 125, 139);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 5px solid black;
+}
+div::before {
+    content: "Elzero";
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: white;
+    font-family: "Arial", "Helvetica", "Sans-serif";
+}
+div::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    left: 50%;
+    background-color: black;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg) translateX(-70%);
+}

@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+.parent {
+    width: 650px;
+    height: 450px;
+    background-color: #EEE;
+    margin: 10px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+div {
+    background-color: black;
+}
+.e {
+    grid-area: 1 / 1 / -1;
+    position: relative;
+}
+.e::before {
+    content: '';
+    background-color: #ff9800;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 224px;
+    top: 6px;
+    animation: e-box 5s linear infinite;
+}
+.e-1 {
+    grid-area: 1 / 1 / 2 / span 4;
+}
+.e-2 {
+    grid-area: 4 / 1 / 5 / span 4;
+}
+.e-3 {
+    grid-area: 7 / 1 / 8 / span 4;
+}
+.l {
+    grid-area: 1 / 6 / -1;
+    position: relative;
+}
+.l::before {
+    content: '';
+    background-color: #ff9800;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -203px;
+    bottom: 5px;
+    animation: l-box 5s linear infinite;
+}
+.l-1 {
+    grid-area: 7 / 6 / 8 / -1;
+}
+@keyframes e-box {
+    5% {
+        transform: translate(-215px, 0);
+    }
+    10% {
+        transform: translate(-215px, 184px);
+    }
+    15% {
+        transform: translate(0, 184px);
+    }
+    20% {
+        transform: translate(-215px, 184px);
+    }
+    25% {
+        transform: translate(-215px, 370px);
+    }
+    30% {
+        transform: translate(0, 370px);
+    }
+    35% {
+        transform: translate(-215px, 370px);
+    }
+    45% {
+        transform: translate(-215px, 0);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes l-box {
+    0% {
+        transform: translate(0, 0);
+        visibility: hidden;
+    }
+    49% {
+        visibility: hidden;
+    }
+    50% {
+        transform: translate(0, 0);
+        visibility: visible;
+    }
+    55% {
+        transform: translate(0, 0);
+    }
+    70% {
+        transform: translate(-213px, 0);
+    }
+    90% {
+        transform: translate(-213px, -370px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-213px, -370px);
+        opacity: 0;
+    }
+}

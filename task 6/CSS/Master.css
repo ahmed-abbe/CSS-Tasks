@@ -1,0 +1,23 @@
+.first {
+    font-size: 20px;
+    border: 2px solid rgb(255, 81, 0);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.second {
+    background-color: #EEE;
+    border: inherit;
+    padding: inherit;
+    text-align: center;
+}
+.div {
+    border: 2px solid seagreen;
+    padding: 15px;
+    font-size: 20px;
+}
+.p {
+    padding: inherit;
+    border: inherit;
+    background-color: #EEE;
+    text-align: center;
+}
